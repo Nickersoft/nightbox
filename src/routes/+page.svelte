@@ -15,11 +15,9 @@
 		<div class="divider" />
 	</header>
 
-	<div class="flex flex-col gap-16">
+	<div class="flex flex-col gap-16 sources-wrapper">
 		{#each sources as source, idx}
-			<div class="source-wrapper" style="--delay: {500 + idx * 50}ms">
-				<Source {source} />
-			</div>
+			<Source {source} />
 		{/each}
 	</div>
 
@@ -39,10 +37,12 @@
 	@keyframes enter {
 		0% {
 			@apply opacity-0;
+			transform: translateY(10px);
 		}
 
 		100% {
 			@apply opacity-100;
+			transform: translateY(0px);
 		}
 	}
 
@@ -51,7 +51,7 @@
 
 		animation-name: enter;
 		animation-timing-function: ease-in-out;
-		animation-duration: 1000ms;
+		animation-duration: 500ms;
 		animation-fill-mode: forwards;
 		animation-iteration-count: 1;
 
@@ -64,13 +64,13 @@
 		}
 	}
 
-	.source-wrapper {
+	.sources-wrapper {
 		animation-name: enter;
 		animation-timing-function: ease-in-out;
-		animation-duration: 1000ms;
+		animation-duration: 500ms;
 		animation-fill-mode: both;
 		animation-iteration-count: 1;
-		animation-delay: var(--delay);
+		animation-delay: 250ms;
 	}
 
 	.divider {
