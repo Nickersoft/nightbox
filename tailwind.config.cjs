@@ -7,6 +7,7 @@ const config = {
 			widest: '0.5em'
 		},
 		fontFamily: {
+			sans: ['Inter', 'sans-serif'],
 			display: ['Alexandria', 'sans-serif']
 		},
 		extend: {}

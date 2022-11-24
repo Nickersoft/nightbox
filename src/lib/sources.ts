@@ -1,9 +1,10 @@
-import type { PaletteType } from './types';
+import type { SourceType } from './types';
 
-const palettes: PaletteType[] = [
+const sources: SourceType[] = [
 	{
 		icon: 'linear.png',
 		name: 'Linear',
+		url: 'https://linear.app',
 		backgrounds: ['#313248', '#292A35', '#272832', '#21232E', '#191A23', '#151621'],
 		text: ['#FFFFFF', '#EEEFFC', '#D2D3E0', '#858699', '#4C4F6B'],
 		primaries: [
@@ -24,4 +25,4 @@ const palettes: PaletteType[] = [
 	}
 ];
 
-export default palettes;
+export default sources;
