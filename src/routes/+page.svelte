@@ -13,7 +13,9 @@
 		}, 2000);
 	}
 
-	$: filtered = sources.filter((source) => source.name.toLowerCase().includes(query.toLowerCase()));
+	$: filtered = sources
+		.filter((source) => source.name.toLowerCase().includes(query.toLowerCase()))
+		.sort((a, b) => (a.name > b.name ? 1 : -1));
 </script>
 
 {#if copied}

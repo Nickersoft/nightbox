@@ -1,17 +1,11 @@
 <script lang="ts" context="module">
-	const tabs: (keyof Pick<SourceType, 'borders' | 'backgrounds' | 'primaries' | 'text'>)[] = [
-		'backgrounds',
-		'borders',
-		'primaries',
-		'text'
-	];
+	import type { SourceType } from '$lib/types';
 
-	export type TabType = typeof tabs[number];
+	export type TabType = keyof SourceType['colors'];
 </script>
 
 <script lang="ts">
-	import type { SourceType } from '$lib/types';
-
+	export let tabs: TabType[];
 	export let selectedTab: TabType;
 
 	function selectTab(tab: typeof selectedTab) {
@@ -20,7 +14,7 @@
 </script>
 
 <ul class="nav">
-	{#each tabs as tab, idx}
+	{#each tabs as tab}
 		{@const select = () => selectTab(tab)}
 
 		<li on:keydown={select} on:click={select} class:active={selectedTab === tab}>

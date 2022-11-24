@@ -9,7 +9,8 @@
 
 	let selectedTab: TabType = 'backgrounds';
 
-	$: colors = source[selectedTab];
+	$: colors = source.colors[selectedTab]?.sort() ?? [];
+	$: tabs = Object.keys(source.colors).filter(Boolean).sort() as TabType[];
 </script>
 
 <div class="source">
@@ -24,7 +25,7 @@
 		>
 			<Open />
 		</a>
-		<Tabs bind:selectedTab />
+		<Tabs {tabs} bind:selectedTab />
 	</header>
 
 	<div class="relative w-full h-40">
@@ -42,11 +43,11 @@
 			@apply flex flex-row flex-wrap lg:flex-nowrap justify-start items-center gap-8 px-8;
 
 			h2 {
-				@apply font-display text-4xl lg:text-5xl text-white;
+				@apply font-display text-4xl lg:text-5xl text-white flex-shrink-0;
 			}
 
 			.icon {
-				@apply w-12 h-12 lg:w-16 lg:h-16 bg-red-50 rounded-lg;
+				@apply w-12 h-12 lg:w-16 lg:h-16 object-cover;
 			}
 		}
 	}
