@@ -12,6 +12,6 @@
 
 <style lang="postcss">
 	.palette {
-		@apply flex flex-row gap-4 overflow-hidden px-8 absolute top-0 left-0 right-0 bottom-0;
+		@apply flex flex-row gap-4 px-8 absolute top-0 left-0 right-0 bottom-0 overflow-auto;
 	}
 </style>

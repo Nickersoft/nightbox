@@ -3,7 +3,7 @@
 	import Open from './Open.svelte';
 
 	import Palette from './Palette.svelte';
-	import Tabs from './Tabs.svelte';
+	import Tabs, { type TabType } from './Tabs.svelte';
 	import Toast from './Toast.svelte';
 
 	export let source: SourceType;
@@ -17,7 +17,7 @@
 		}, 2000);
 	}
 
-	let selectedTab: 'backgrounds' | 'primaries' | 'text' = 'backgrounds';
+	let selectedTab: TabType = 'backgrounds';
 
 	$: colors = source[selectedTab];
 </script>
@@ -56,7 +56,7 @@
 			@apply flex flex-row flex-wrap lg:flex-nowrap justify-start items-center gap-8 px-8;
 
 			h2 {
-				@apply font-display text-4xl lg:text-6xl text-white;
+				@apply font-display text-4xl lg:text-5xl text-white;
 			}
 
 			.icon {

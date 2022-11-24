@@ -39,7 +39,33 @@
 
 <style lang="postcss">
 	.item {
-		@apply flex flex-col gap-4 justify-center items-center;
+		@apply flex flex-col gap-4 justify-center items-center cursor-pointer;
+
+		&:hover {
+			.color {
+				@apply lg:-translate-y-1;
+
+				.copy {
+					@apply opacity-100;
+				}
+
+				.copy :global(svg) {
+					@apply scale-100;
+				}
+			}
+
+			.label {
+				@apply text-white opacity-100;
+
+				span:first-of-type {
+					@apply -translate-y-1 opacity-0;
+				}
+
+				span:last-of-type {
+					@apply translate-y-0 opacity-100;
+				}
+			}
+		}
 
 		.label {
 			@apply text-white w-20 text-xs opacity-40 transition-opacity italic relative mb-8;
@@ -58,32 +84,10 @@
 		}
 
 		.color {
-			@apply overflow-hidden h-16 w-28 rounded-md bg-red-50 lg:hover:-translate-y-1 transition-transform duration-300 cursor-pointer active:scale-95;
+			@apply overflow-hidden h-16 w-28 rounded-md bg-red-50 transition-transform duration-300 cursor-pointer active:scale-95;
 			@apply border border-white border-opacity-10;
 
 			background-color: var(--color);
-
-			&:hover {
-				& + .label {
-					@apply text-white opacity-100;
-
-					span:first-of-type {
-						@apply -translate-y-1 opacity-0;
-					}
-
-					span:last-of-type {
-						@apply translate-y-0 opacity-100;
-					}
-				}
-
-				& > .copy {
-					@apply opacity-100;
-				}
-
-				& > .copy :global(svg) {
-					@apply scale-100;
-				}
-			}
 
 			.copy {
 				@apply transform-gpu w-full h-full bg-black bg-opacity-10 flex flex-col gap-1 justify-center items-center opacity-0 transition-all duration-300;

@@ -15,11 +15,13 @@
 		<div class="divider" />
 	</header>
 
-	{#each sources as source, idx}
-		<div class="source-wrapper" style="--delay: {500 + idx * 50}ms">
-			<Source {source} />
-		</div>
-	{/each}
+	<div class="flex flex-col gap-16">
+		{#each sources as source, idx}
+			<div class="source-wrapper" style="--delay: {500 + idx * 50}ms">
+				<Source {source} />
+			</div>
+		{/each}
+	</div>
 
 	<footer class="text-white py-16 text-sm text-opacity-40 text-center">
 		Made with ❤️ by <a

@@ -1,15 +1,18 @@
-<script lang="ts">
-	import { createEventDispatcher } from 'svelte';
-
-	import type { SourceType } from '$lib/types';
-
-	const tabs: (keyof Pick<SourceType, 'backgrounds' | 'primaries' | 'text'>)[] = [
+<script lang="ts" context="module">
+	const tabs: (keyof Pick<SourceType, 'borders' | 'backgrounds' | 'primaries' | 'text'>)[] = [
 		'backgrounds',
+		'borders',
 		'primaries',
 		'text'
 	];
 
-	export let selectedTab: typeof tabs[number];
+	export type TabType = typeof tabs[number];
+</script>
+
+<script lang="ts">
+	import type { SourceType } from '$lib/types';
+
+	export let selectedTab: TabType;
 
 	function selectTab(tab: typeof selectedTab) {
 		selectedTab = tab;
