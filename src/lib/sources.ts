@@ -9,18 +9,27 @@ const sources: SourceType[] = [
 		text: ['#FFFFFF', '#EEEFFC', '#D2D3E0', '#858699', '#4C4F6B'],
 		borders: ['#313248', '#2C2D3C', '#212234', '#191A23'],
 		primaries: [
-			'#F2C94C',
-			'#F2994A',
-			'#26B5CE',
-			'#28A745',
-			'#59A200',
-			'#DB6E1F',
-			'#EB5757',
-			'#5E6AD2',
 			'#0F7488',
 			'#0F783C',
-			'#4C4F6B'
+			'#26B5CE',
+			'#28A745',
+			'#4C4F6B',
+			'#59A200',
+			'#5E6AD2',
+			'#DB6E1F',
+			'#EB5757',
+			'#F2994A',
+			'#F2C94C'
 		]
+	},
+	{
+		icon: 'notion.png',
+		name: 'Notion',
+		url: 'https://notion.so',
+		primaries: ['#625DF5', '#CF3917'],
+		borders: ['#FFFFFF', '#FFFFFF48', '#FFFFFF18', '#767676'],
+		backgrounds: ['#FFFFFF0E', '#FFFFFF18', '#9B9B9B', '#252525', '#202020', '#191919'],
+		text: ['#FFFFFF', '#F6F6F6', '#9B9B9B', '#000000']
 	},
 	{
 		icon: 'github.png',

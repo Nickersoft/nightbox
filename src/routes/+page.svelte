@@ -1,9 +1,10 @@
 <script lang="ts">
 	import sources from '$lib/sources';
 
-	import { Source, Toast } from '$lib/components';
+	import { Search, Source, Toast } from '$lib/components';
 
 	let copied: boolean = false;
+	let query: string = '';
 
 	function showToast() {
 		copied = true;
@@ -11,6 +12,8 @@
 			copied = false;
 		}, 2000);
 	}
+
+	$: filtered = sources.filter((source) => source.name.toLowerCase().includes(query.toLowerCase()));
 </script>
 
 {#if copied}
@@ -26,10 +29,12 @@
 		<h1>Nightbox</h1>
 		<span>Dark color palettes</span>
 		<div class="divider" />
+
+		<Search bind:value={query} />
 	</header>
 
 	<div class="flex flex-col gap-16 sources-wrapper">
-		{#each sources as source}
+		{#each filtered as source}
 			<Source {source} on:copied={showToast} />
 		{/each}
 	</div>

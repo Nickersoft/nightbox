@@ -14,7 +14,7 @@
 
 <div class="source">
 	<header>
-		<img alt="Linear" src="/icons/{source.icon}" class="icon" />
+		<img alt={source.name} src="/icons/{source.icon}" class="icon" />
 		<h2>{source.name}</h2>
 		<a
 			class="hover:opacity-100 opacity-60 transition-opacity"
