@@ -1,8 +1,21 @@
 <script lang="ts">
 	import sources from '$lib/sources';
 
-	import { Source } from '$lib/components';
+	import { Source, Toast } from '$lib/components';
+
+	let copied: boolean = false;
+
+	function showToast() {
+		copied = true;
+		setTimeout(() => {
+			copied = false;
+		}, 2000);
+	}
 </script>
+
+{#if copied}
+	<Toast>Copied to clipboard!</Toast>
+{/if}
 
 <svelte:head>
 	<title>Nightbox – Explore dark color palettes</title>
@@ -16,8 +29,8 @@
 	</header>
 
 	<div class="flex flex-col gap-16 sources-wrapper">
-		{#each sources as source, idx}
-			<Source {source} />
+		{#each sources as source}
+			<Source {source} on:copied={showToast} />
 		{/each}
 	</div>
 

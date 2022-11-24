@@ -4,27 +4,13 @@
 
 	import Palette from './Palette.svelte';
 	import Tabs, { type TabType } from './Tabs.svelte';
-	import Toast from './Toast.svelte';
 
 	export let source: SourceType;
-
-	let copied: boolean = false;
-
-	function showToast() {
-		copied = true;
-		setTimeout(() => {
-			copied = false;
-		}, 2000);
-	}
 
 	let selectedTab: TabType = 'backgrounds';
 
 	$: colors = source[selectedTab];
 </script>
-
-{#if copied}
-	<Toast>Copied to clipboard!</Toast>
-{/if}
 
 <div class="source">
 	<header>
@@ -43,7 +29,7 @@
 
 	<div class="relative w-full h-40">
 		{#key selectedTab}
-			<Palette {colors} on:copied={showToast} />
+			<Palette {colors} on:copied />
 		{/key}
 	</div>
 </div>

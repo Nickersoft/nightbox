@@ -8,6 +8,6 @@
 
 <style lang="postcss">
 	.toast {
-		@apply text-center rounded-md shadow-md bg-white bg-opacity-10 border border-white border-opacity-10 text-sm fixed bottom-4 left-1/2 -translate-x-1/2 px-4 lg:px-8 py-2 text-white;
+		@apply text-center backdrop-blur-sm rounded-md bg-white bg-opacity-20 border z-50 border-white border-opacity-10 text-sm fixed bottom-4 left-1/2 -translate-x-1/2 px-4 lg:px-8 py-2 text-white;
 	}
 </style>
