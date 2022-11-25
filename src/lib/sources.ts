@@ -122,6 +122,71 @@ const sources: SourceType[] = [
 		}
 	},
 	{
+		icon: 'cron.png',
+		name: 'Cron',
+		url: 'https://cron.com',
+		colors: {
+			borders: ['#51ACE3', '#36556A', '#303030', '#242424'],
+			text: [
+				'#FFFFFF',
+				'#9EA0FF',
+				'#51ACE3',
+				'#FAFBFF',
+				'#74A5C7',
+				'#DEFFFF',
+				'#9799D1',
+				'#D6FFE3',
+				'#798893',
+				'#E5E5E5',
+				'#768B7A',
+				'#97E6C5',
+				'#838397',
+				'#CCCCCC',
+				'#808080',
+				'#63D18D',
+				'#5A6F7F',
+				'#D1AAB0',
+				'#666666',
+				'#B2B2B2'
+			],
+			backgrounds: [
+				'#404040',
+				'#333333',
+				'#303030',
+				'#2B2B2B',
+				'#292929',
+				'#262626',
+				'#242424',
+				'#1A1A1A',
+				'#000000',
+				'#FFFFFF14',
+				'#FF5714',
+				'#2F4655',
+				'#2D4935',
+				'#3F405B'
+			]
+		}
+	},
+	{
+		icon: 'discord.png',
+		name: 'Discord',
+		url: 'https://discord.com',
+		colors: {
+			backgrounds: [
+				'#4F545C',
+				'#4F545C7A',
+				'#4F545C99',
+				'#36393F',
+				'#2F3136',
+				'#292B2F',
+				'#202225'
+			],
+			text: ['#FFFFFF', '#747F8D', '#DCDDDE', '#B9BBBE', '#A3A6AA', '#8E9297', '#000000'],
+			primaries: ['#ED4245', '#5865F2', '#2D7D46', '#00AFF4', '#3BA55D', '#FAA61A', '#3BA55C'],
+			borders: ['#FFFFFF', '#4F545C7A']
+		}
+	},
+	{
 		icon: 'code.png',
 		name: 'Visual Studio Code',
 		url: 'https://code.visualstudio.com/',

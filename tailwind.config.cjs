@@ -7,8 +7,8 @@ const config = {
 			widest: '0.5em'
 		},
 		fontFamily: {
-			sans: ['Inter', 'sans-serif'],
-			display: ['Alexandria', 'sans-serif']
+			sans: ['InterVariable', 'sans-serif'],
+			display: ['AlexandriaVariable', 'sans-serif']
 		},
 		extend: {}
 	},

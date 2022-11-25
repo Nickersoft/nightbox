@@ -9,5 +9,5 @@
 
 ---
 
-> ## Have a site you want to add?
-> You can either [open an issue](https://github.com/Nickersoft/nightbox/issues) requesting I add it, _or_ if you're feeling adventurous you can open a PR that adds the palette to [this file](src/lib/sources.ts).
+## Have a site to add?
+You can either [open an issue](https://github.com/Nickersoft/nightbox/issues) requesting it, _or_ if you're feeling adventurous you can open a PR that adds the palette to [this file](src/lib/sources.ts).
