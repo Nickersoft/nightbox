@@ -15,7 +15,7 @@
     "@rehooks/component-size": "^1.0.3",
     "adm-zip": "^0.5.9",
     "amplitude-js": "^8.14.1",
-    "array-move": "3.0.1",
+    "array-move": "4.0.0",
     "bunyan": "^1.8.14",
     "bunyan-format": "^0.2.1",
     "bunyan-rotating-file-stream": "^2.0.2",
