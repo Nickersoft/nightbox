@@ -122,6 +122,38 @@ const sources: SourceType[] = [
 		}
 	},
 	{
+		icon: 'figma.png',
+		name: 'Figma',
+		url: 'https://figma.com',
+		colors: {
+			borders: ['#444444'],
+			backgrounds: [
+				'#4A5878',
+				'#444444',
+				'#394360',
+				'#383838',
+				'#2C2C2C',
+				'#222222',
+				'#1E1E1E',
+				'#8999AC',
+				'#888888'
+			],
+			text: ['#FFFFFF', '#FFFFFFB3', '#FFFFFF66'],
+			primaries: [
+				'#FFCD29',
+				'#009959',
+				'#007BE5',
+				'#E03E1A',
+				'#625DF5',
+				'#CF3917',
+				'#7CC4F8',
+				'#0C8CE9',
+				'#D1A8FF',
+				'#8A38F5'
+			]
+		}
+	},
+	{
 		icon: 'cron.png',
 		name: 'Cron',
 		url: 'https://cron.com',

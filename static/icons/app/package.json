@@ -1,0 +1,115 @@
+{
+  "name": "SparkDesktop",
+  "productName": "Spark Desktop",
+  "version": "3.1.2",
+  "description": "Web client for Spark mail application",
+  "main": "dist/main/main.js",
+  "repository": "https://github.com/readdle/spark-web-client.git",
+  "author": "Readdle",
+  "private": true,
+  "dependencies": {
+    "@braze/web-sdk": "^4.0.6",
+    "@morphic-ts/adt": "^3.0.0",
+    "@quill/composer": "1.3.92",
+    "@rastopyr/react-custom-scrollbar": "4.2.14",
+    "@rehooks/component-size": "^1.0.3",
+    "adm-zip": "^0.5.9",
+    "amplitude-js": "^8.14.1",
+    "array-move": "3.0.1",
+    "bunyan": "^1.8.14",
+    "bunyan-format": "^0.2.1",
+    "bunyan-rotating-file-stream": "^2.0.2",
+    "bytes": "^3.1.1",
+    "caniuse-lite": "^1.0.30001283",
+    "classnames": "^2.2.6",
+    "clone": "^2.1.2",
+    "codemirror": "^5.60.0",
+    "date-fns": "^2.29.3",
+    "electron-clipboard-ex": "^1.3.3",
+    "execa": "^6.0.0",
+    "file-url": "3.0.0",
+    "find-process": "^1.4.7",
+    "form-data": "^4.0.0",
+    "fp-ts": "^2.12.2",
+    "fp-ts-contrib": "^0.1.29",
+    "framer-motion": "^6.3.0",
+    "he": "^1.2.0",
+    "i18next": "^21.6.2",
+    "io-ts": "^2.2.16",
+    "js-message": "npm:@spark/js-message@1.0.6-3",
+    "jsverify": "^0.8.4",
+    "md5-file": "^5.0.0",
+    "meow": "^10.1.2",
+    "mkdirp": "^1.0.3",
+    "monocle-ts": "^2.3.11",
+    "newtype-ts": "^0.3.4",
+    "node-fetch": "^3.1.0",
+    "node-ipc": "^9.1.3",
+    "object-hash": "^2.2.0",
+    "odiff-bin": "^2.5.0",
+    "omit.js": "^2.0.2",
+    "open": "^8.4.0",
+    "prosemirror-commands": "^1.1.12",
+    "prosemirror-dropcursor": "^1.4.0",
+    "prosemirror-history": "^1.2.0",
+    "prosemirror-keymap": "^1.1.5",
+    "prosemirror-model": "^1.15.0",
+    "prosemirror-schema-basic": "^1.1.2",
+    "prosemirror-state": "^1.3.4",
+    "prosemirror-view": "^1.23.3",
+    "pure-md5": "^0.1.13",
+    "querystring": "^0.2.1",
+    "rc-tooltip": "^5.1.1",
+    "react": "^17.0.1",
+    "react-circular-progressbar": "^2.0.3",
+    "react-codemirror2": "^7.2.1",
+    "react-dom": "^17.0.1",
+    "react-i18next": "^11.14.3",
+    "react-input-autosize": "^3.0.0",
+    "react-outside-click-handler": "^1.3.0",
+    "react-select": "^5.2.1",
+    "react-virtualized-auto-sizer": "^1.0.6",
+    "react-window": "^1.8.7",
+    "rxjs": "^7.5.5",
+    "sparkcore": "npm:@spark/sparkcore@0.0.39186-3.1",
+    "styled-components": "^5.3.3",
+    "systeminformation": "^5.9.15",
+    "throttle-debounce": "^5.0.0",
+    "untildify": "^4.0.0",
+    "use-resize-observer": "^8.0.0",
+    "uuid": "^8.3.2"
+  },
+  "resolutions": {
+    "js-message": "npm:@spark/js-message@1.0.6-3"
+  },
+  "jest": {
+    "testResultsProcessor": "jest-junit-reporter",
+    "projects": [
+      "<rootDir>/src/jest.config.json",
+      "<rootDir>/test/jest.config.json"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "packageManager": "yarn@3.1.1",
+  "dependenciesMeta": {
+    "@spark/windows-file-clipboard": {
+      "built": false
+    },
+    "DesktopSparkDev": {
+      "built": false
+    },
+    "node": {
+      "built": false
+    },
+    "swiper": {
+      "built": false
+    }
+  },
+  "installConfig": {
+    "selfReferences": false
+  }
+}
