@@ -32,7 +32,7 @@
     "form-data": "^4.0.0",
     "fp-ts": "^2.12.2",
     "fp-ts-contrib": "^0.1.29",
-    "framer-motion": "^6.3.0",
+    "framer-motion": "^7.0.0",
     "he": "^1.2.0",
     "i18next": "^21.6.2",
     "io-ts": "^2.2.16",
