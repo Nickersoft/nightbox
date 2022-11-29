@@ -9,8 +9,8 @@
 </script>
 
 <svelte:head>
-	<link rel="preload" as="font" href={alexandria} type="font/woff2" />
-	<link rel="preload" as="font" href={inter} type="font/woff2" />
+	<link rel="preload" crossorigin="anonymous" as="font" href={alexandria} type="font/woff2" />
+	<link rel="preload" crossorigin="anonymous" as="font" href={inter} type="font/woff2" />
 
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-6QL59M91E6"></script>
 	<script>
