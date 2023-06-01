@@ -38,7 +38,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@fontsource/alexandria": "^4.5.0",
+		"@fontsource/alexandria": "^5.0.0",
 		"@fontsource/inter": "^4.5.14",
 		"color-namer": "^1.4.0",
 		"copy-to-clipboard": "^3.3.3"
